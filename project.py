@@ -19,9 +19,10 @@ def remove_punctuation(chaine):
             newchaine += caractere
     return newchaine
 
-dico_prop={}
+
 def proportion_lettres(texte_lettres):
 #faire docstring donne la proportion de chaque lettre dans le texte, et retourne un dictionnaire
+    dico_prop={}
     for lettre in texte_lettres:
         if lettre in ['à','â']:
             lettre = 'a'
@@ -37,8 +38,55 @@ def proportion_lettres(texte_lettres):
     return dico_prop
 
 
+def simplifie_textes(texte_brut):
+#faire une docstring: prend un texte brut, le lie, le rend minuscule et lui enlève toute ponctuation
+    with open (texte_brut) as t:
+        texte = t.read()
+        texte_low = texte.lower()
+        texte_lettres = re.sub(r'[^a-z]','',texte_low)
+    return texte_lettres
+
+
 poemes_anglais = glob.glob('Dickinson/*.txt')
 poemes_francais = glob.glob('Apollinaire/*.txt')
+textes_test = glob.glob('Testables/*.txt')
+
+recueils_deux_langues= [poemes_francais, poemes_anglais]
+
+dico_de_textes_fr={}
+dico_de_textes_an={}
+
+for recueil in recueils_deux_langues:
+    for poeme in recueil:
+        texte_simplifie = simplifie_textes(poeme)
+        dico_prop = proportion_lettres(texte_simplifie)
+        if recueil== poemes_francais:
+            dico_de_textes_fr[poeme]= dico_prop
+        if recueil== poemes_anglais:
+            dico_de_textes_an[poeme]= dico_prop
+
+print(dico_prop)
+tableau_prop_fr = pd.DataFrame.from_dict(dico_de_textes_fr)
+tableau_prop_an = pd.DataFrame.from_dict(dico_de_textes_an)
+
+
+print(tableau_prop_an.mean(axis=1)) #probleme parce que c'est les valeurs sotn des cases de dico_prop
+
+
+textes_test = glob.glob('Testables/*.txt')
+
+for inconnu in textes_test:
+    texte_simplifie = simplifie_textes(poeme)
+    dico_prop = proportion_lettres(texte_simplifie)
+    taille_texte = len(texte_simplifie)
+
+tableau_prop_inc = pd.DataFrame.from_dict(dico_prop)
+
+print(tableau_prop_fr)
+print(tableau_prop_an)
+print(tableau_prop_inc)
+
+
 
 #un peu inutile comme on a mis les textes dans un fichier; à modifier
 #print ('est-ce un texte à tester? (y/n)')
@@ -52,24 +100,3 @@ poemes_francais = glob.glob('Apollinaire/*.txt')
 #        poemes = poemes_francais
 #    if rep_langue == 'a':
 #        poemes = poemes_anglais
-
-
-dico_de_textes={}
-
-for poeme in poemes_francais:
-    with open (poeme) as t:
-        texte = t.read()
-        texte_low = texte.lower()
-        texte_lettres = re.sub(r'[^a-z\n]','',texte_low)
-        print(texte_lettres)
-        dico_prop = proportion_lettres(texte_lettres)
-        #print (dico_prop)
-        dico_de_textes['{}'.format(poeme)]= dico_prop
-
-
-#print(dico_de_textes)
-
-
-
-tableau_prop = pd.DataFrame.from_dict(dico_de_textes)
-print(tableau_prop)
