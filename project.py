@@ -5,9 +5,6 @@ import glob
 import string
 import re
 
-#texte = list(albatros) #mis en liste pour travailler sur les chaines de caracteres et les modifier
-# "".join(texte) rétablit en texte
-
 
 def proportion_lettres(texte_lettres):
 #faire docstring donne la proportion de chaque lettre dans le texte, et retourne un dictionnaire
@@ -42,50 +39,125 @@ textes_test = glob.glob('Testables/*.txt')
 
 recueils_deux_langues= [poemes_francais, poemes_anglais]
 
-dico_de_textes_fr={}
-dico_de_textes_an={}
+dico_de_textes_fr = {}
+dico_de_textes_an = {}
+titres_des_poemes_fr = []
+titres_des_poemes_an = []
 
 for recueil in recueils_deux_langues:
     for poeme in recueil:
         texte_simplifie = simplifie_textes(poeme)
         dico_prop = proportion_lettres(texte_simplifie)
-        if recueil== poemes_francais:
+        if recueil == poemes_francais:
             dico_de_textes_fr[poeme]= dico_prop
-        if recueil== poemes_anglais:
+            titres_des_poemes_fr.append(poeme)
+        if recueil == poemes_anglais:
             dico_de_textes_an[poeme]= dico_prop
-
-tableau_prop_fr = pd.DataFrame()
-tableau_prop_an = pd.DataFrame()
-
-
-for poeme, distrib in dico_de_textes_fr.items():
-    #changer le nom des lignes
-    tableau_prop_fr=pd.concat([tableau_prop_fr,pd.DataFrame(distrib)])
-
-for poeme, distrib in dico_de_textes_an.items():
-    tableau_prop_an=pd.concat([tableau_prop_an,pd.DataFrame(distrib)])
-
-print("Voici un tableau avec les proportions de lettres pour une base de textes français,puis les moyennes d'apparitions de chaque lettre")
-print(tableau_prop_fr)
-print(tableau_prop_fr.mean(axis=0))
-
-print("Voici un tableau avec les proportions de lettres pour une base de textes anglais, puis les moyennes d'apparitions de chaque lettre")
-print(tableau_prop_an)
-print(tableau_prop_an.mean(axis=0)) 
+            titres_des_poemes_an.append(poeme)
 
 
 dico_de_texte_inc = {}
 
 for inconnu in textes_test:
-    texte_simplifie = simplifie_textes(poeme)
-    dico_prop = proportion_lettres(texte_simplifie)
+    texte_simplifie = simplifie_textes(inconnu)
     taille_texte = len(texte_simplifie)
-    dico_de_texte_inc[inconnu]= dico_prop
+    dico_de_texte_inc[inconnu]= proportion_lettres(texte_simplifie)
 
-tableau_prop_inc = pd.DataFrame.from_dict(dico_de_texte_inc)
-print(tableau_prop_inc)
+tableau_prop_fr = pd.DataFrame()
+tableau_prop_an = pd.DataFrame()
+tableau_prop_inc=pd.DataFrame()
+
+for poeme, distrib in dico_de_textes_fr.items(): #changer le nom des lignes
+    tableau_prop_fr =pd.concat([tableau_prop_fr,pd.DataFrame(distrib)]) #ne sert pas de mettre index=titres parce que les refait a chaque fois
+
+for poeme, distrib in dico_de_textes_an.items():
+    tableau_prop_an =pd.concat([tableau_prop_an,pd.DataFrame(distrib)])
+
+for poeme, distrib in dico_de_texte_inc.items():
+    tableau_prop_inc =pd.concat([tableau_prop_inc,pd.DataFrame(distrib)])
+
+#print(tableau_prop_fr)
+print('tableau moyennes francais')
+tableau_moy_fr = tableau_prop_fr.mean(axis=0)
+print(tableau_moy_fr)
+dict_moy_fr= tableau_moy_fr.to_dict()
+df_fr=pd.DataFrame(dict_moy_fr,index=['fr'])
+
+print('tableau moy ang')
+tableau_moy_an = tableau_prop_an.mean(axis=0)
+print(tableau_moy_an)
+dict_moy_an = tableau_moy_an.to_dict()
+df_an = pd.DataFrame(dict_moy_an,index=['an'])
+
+tableau_moy_inc=tableau_prop_inc.mean(axis=0)
+dict_moy_inc= tableau_moy_inc.to_dict()
+df_inc=pd.DataFrame(dict_moy_inc,index=['inc'])
+print(tableau_moy_inc)
+
+print('corr tout')
+inc_vs_ref=[df_inc, df_fr, df_an]
+tableau_moyennes_fr_an_inc=pd.concat(inc_vs_ref).transpose()
+print(tableau_moyennes_fr_an_inc) #tranpose pour bien aller avec le sens de corr
+print(tableau_moyennes_fr_an_inc['fr'].corr(tableau_moyennes_fr_an_inc['inc'])) #donne le coefficient de correlation entre les colonnes
+print(tableau_moyennes_fr_an_inc['an'].corr(tableau_moyennes_fr_an_inc['inc']))
+
+#VERIFIER QUE CE SONT LES BONNES VALEURS PARCE QUE CORRELATION DANS LE MAUVAIS SENS
 
 
+
+
+#tableau_moyennes_fr_inc= pd.concat([tableau_moyennes_fr_inc,tableau_prop_inc])
+#tableau_moyennes_fr_inc= pd.concat([tableau_moyennes_fr_inc,tableau_moy_fr])
+
+
+
+
+#dico_de_moy_ref={'fr':[tableau_moy_fr],
+#                 'an': [tableau_moy_an],
+#                 'inc': [tableau_prop_inc]}
+#for tableau, moyenne in dico_de_moy_ref.items():
+#    tableau_moyennes_fr_inc = pd.concat([tableau_moyennes_fr_inc,pd.DataFrame(moyenne)])
+#tableau_de_moy = pd.DataFrame.from_dict(dico_de_moy_ref)
+#print(tableau_de_moy )#!!!! trop naze)
+
+#EST CE QUE C'EST MIEUX??
+
+tableau_prop= pd.DataFrame()
+tableau_moy= pd.DataFrame()
+
+liste_de_dico_de_textes=(dico_de_textes_fr, dico_de_textes_an, dico_de_texte_inc)
+
+for dico in liste_de_dico_de_textes:
+
+    if dico == dico_de_textes_fr:
+        tableau_prop = tableau_prop_fr
+        tableau_moy = tableau_moy_fr
+    if dico == dico_de_textes_an:
+        tableau_prop = tableau_prop_an
+        tableau_moy = tableau_moy_an
+    if dico == dico_de_texte_inc:
+        tableau_prop = tableau_prop_inc
+        tableau_moy = tableau_prop_inc
+
+    for poeme, distrib in dico_de_textes_fr.items(): #changer le nom des lignes
+        tableau_prop =pd.concat([tableau_prop,pd.DataFrame(distrib)])
+
+#POUR COMPARER AVEC MATRICE DISTANCE EUCLIDIENNE This is an old question, but there is a Scipy function that does this:
+
+tableau_moyennes_compar=pd.DataFrame()
+
+
+#tableau_moyennes_compar= pd.concat([tableau_moyennes_ref,tableau_prop_inc])
+#print(tableau_moyennes_compar)
+
+from scipy.spatial.distance import pdist, squareform
+
+
+
+## FIN
+
+#tableau_prop_inc = pd.DataFrame.from_dict(dico_de_texte_inc)
+#print('tableau prop texte inconnu')
 
 #un peu inutile comme on a mis les textes dans un fichier; à modifier
 #print ('est-ce un texte à tester? (y/n)')
