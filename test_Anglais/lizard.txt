@@ -1,0 +1,76 @@
+Lizards are a widespread group of squamate reptiles, with over 6,000 species,[1] ranging across all continents except Antarctica, as well as most oceanic island chains. The group is paraphyletic as it excludes the snakes and Amphisbaenia; some lizards are more closely related to these two excluded groups than they are to other lizards. Lizards range in size from chameleons and geckos a few centimeters long to the 3 meter long Komodo dragon.
+
+Most lizards are quadrupedal, running with a strong side-to-side motion. Others are legless, and have long snake-like bodies. Some such as the forest-dwelling Draco lizards are able to glide. They are often territorial, the males fighting off other males and signalling, often with brightly colours, to attract mates and to intimidate rivals. Lizards are mainly carnivorous, often being sit-and-wait predators; many smaller species eat insects, while the Komodo eats mammals as big as water buffalo.
+
+Lizards make use of a variety of antipredator adaptations, including venom, camouflage, reflex bleeding, and the ability to sacrifice and regrow their tails.
+
+Anatomy
+
+Largest and smallest
+
+The adult length of species within the suborder ranges from a few centimeters for chameleons such as Brookesia micra and geckos such as Sphaerodactylus ariasae[2] to nearly 3 m (9.8 ft) in the case of the largest living varanid lizard, the Komodo dragon.[3] Most lizards are fairly small animals.
+
+Distinguishing features
+
+Lizards typically have four legs, feet and external ears, though some are legless, while snakes lack both of these characteristics. Lizards and snakes share a movable quadrate bone, distinguishing them from the sphenodonts, which have more primitive and solid diapsid skulls. Some lizards such as chameleons have prehensile tails, assisting them in climbing among vegetation.[4]
+
+As in other reptiles, the skin of lizards is covered in overlapping scales made of keratin. This provides protection from the environment and reduces water loss through evaporation. This adaptation enables lizards to thrive in some of the driest deserts on earth. The skin is tough and leathery, and is shed (sloughed) as the animal grows. Unlike snakes which shed the skin in a single piece, lizards slough their skin in several pieces. The scales may be modified into spines for display or protection, and some species have bone osteoderms underneath the scales.[4][5]
+
+The dentitions of lizards reflect their wide range of diets, including carnivorous, insectivorous, omnivorous, herbivorous, nectivorous, and molluscivorous. Species typically have uniform teeth suited to their diet, but several species have variable teeth, such as cutting teeth in the front of the jaws and crushing teeth in the rear. Most species are pleurodont, though agamids and chameleons are acrodont.[6][4]
+
+The tongue can be extended outside the mouth, and is often long. In the beaded lizards, whiptails and monitor lizards, the tongue is forked and used mainly or exclusively to sense the environment, continually flicking out to sample the environment, and back to transfer molecules to the vomeronasal organ responsible for chemosensation, analogous to but different from smell or taste. In geckos, the tongue is used to lick the eyes clean: they have no eyelids. Chameleons have very long sticky tongues which can be extended rapidly to catch their insect prey.[4]
+
+Three lineages, the geckos, anoles, and chameleons, have modified the scales under their toes to form adhesive pads, highly prominent in the first two groups. The pads are composed of millions of tiny setae (hair-like structures) which fit closely to the substrate to adhere using van der Waals forces; no liquid adhesive is needed.[7] In addition, the toes of chameleons are divided into two opposed groups on each foot (zygodactyly), enabling them to perch on branches as birds do.[a][4]
+
+Physiology
+
+Locomotion
+
+Aside from legless lizards, most lizards are quadrupedal and move using gaits with alternating movement of the right and left limbs with substantial body bending. This body bending prevents significant respiration during movement, limiting their endurance, in a mechanism called Carrier's constraint. Several species can run bipedally,[8] and a few can prop themselves up on their hindlimbs and tail while stationary. Several small species such as those in the genus Draco can glide: some can attain a distance of 60 metres (200 feet), losing 10 metres (33 feet) in height.[9] Some species, like geckos and chameleons, adhere to vertical surfaces including glass and ceilings.[7] Some species, like the common basilisk, can run across water.[10]
+
+Senses
+
+Further information: Sense
+Lizards make use of their senses of sight, touch, olfaction and hearing like other vertebrates. The balance of these varies with the habitat of different species; for instance, skinks that live largely covered by loose soil rely heavily on olfaction and touch, while geckos depend largely on acute vision for their ability to hunt and to evaluate the distance to their prey before striking. Monitor lizards have acute vision, hearing, and olfactory senses. Some lizards make unusual use of their sense organs: chameleons can steer their eyes in different directions, sometimes providing non-overlapping fields of view, such as forwards and backwards at once. Lizards lack external ears, having instead a circular opening in which the tympanic membrane (eardrum) can be seen. Many species rely on hearing for early warning of predators, and flee at the slightest sound.[11]
+
+As in snakes and many mammals, all lizards have a specialised olfactory system, the vomeronasal organ, used to detect pheromones. Monitor lizards transfer scent from the tip of their tongue to the organ; the tongue is used only for this information-gathering purpose, and is not involved in manipulating food.[12][11]
+
+Some lizards, particularly iguanas, have retained a photosensory organ on the top of their heads called the parietal eye, a basal ("primitive") feature also present in the tuatara. This "eye" has only a rudimentary retina and lens and cannot form images, but is sensitive to changes in light and dark and can detect movement. This helps them detect predators stalking it from above.[13]
+
+Venom
+
+Further information: Evolution of snake venom
+Until 2006 it was thought that among lizards, only the Gila monster and the Mexican beaded lizard were venomous. However, several species of monitor lizards, including the Komodo dragon, produce powerful venom in their oral glands. Lace monitor venom, for instance, causes swift loss of consciousness and extensive bleeding through its pharmacological effects, both lowering blood pressure and preventing blood clotting. Nine classes of toxin known from snakes are produced by lizards. The range of actions provides the potential for new medicinal drugs based on lizard venom proteins.[14][15]
+
+Genes associated with venom toxins have been found in the salivary glands on a wide range of lizards, including species traditionally thought of as non-venomous, such as iguanas and bearded dragons. This suggests that these genes evolved in the common ancestor of lizards and snakes, some 200 million years ago (forming a single clade, the Toxicofera).[14] However, most of these putative venom genes were "housekeeping genes" found in all cells and tissues, including skin and cloacal scent glands. The genes in question may thus be evolutionary precursors of venom genes.[16]
+
+Respiration
+
+Recent studies (2013 and 2014) on the lung anatomy of the savannah monitor and green iguana found them to have a unidirectional airflow system, which involves the air moving in a loop through the lungs when breathing. This was previously thought to only exist in the archosaurs (crocodilians and birds). This may be evidence that unidirectional airflow is an ancestral trait in diapsids.[17][18]
+
+Reproduction and lifecycle
+
+As with all amniotes, lizards rely on internal fertilisation and copulation involves the male inserting one of his hemipenes into the female's cloaca.[19] The majority of species are oviparous (egg laying). The female deposits the eggs in a protective structure like a nest or crevice or simply on the ground.[20] Depending on the species, clutch size can vary from 4–5 percent of the females body weight to 40–50 percent and clutches range from one or a few large eggs to dozens of small ones.[21]
+
+In most lizards, the eggs have leathery shells to allow for the exchange of water, although more arid-living species have calcified shells to retain water. Inside the eggs, the embryos use nutrients from the yolk. Parental care is uncommon and the female usually abandons the eggs after laying them. Brooding and protection of eggs does occur in some species. The female prairie skink uses respiratory water loss to maintain the humidity of the eggs which facilitates embryonic development. In lace monitors, the young hatch close to 300 days and the female returns to help them escape the termite mound were the eggs were laid.[20]
+
+Around 20 percent of lizard species reproduce via viviparity (live birth). This is particularly common in Anguimorphs. Viviparous species give birth to relatively developed young which look like miniature adults. Embryos are nourished via a placenta-like structure.[22] A minority of lizards have parthenogenesis (reproduction from unfertilised eggs). These species consist of all females who reproduce asexually with no need for males. This is known in occur in various species of whiptail lizards.[23] Parthenogenesis was also recorded in species that normally reproduce sexually. A captive female Komodo dragon produced a clutch of eggs, despite being separated from males for over two years.[24]
+
+Sex determination in lizards can be temperature-dependent. The temperature of the eggs' micro-environment can determine the sex of the hatched young: low temperature incubation produces more females while higher temperatures produce more males. However, some lizards have sex chromosomes and both male heterogamety (XY and XXY) and female heterogamety (ZW) occur.[23]
+
+Behaviour
+
+Diurnality and thermoregulation
+
+The majority of lizard species are active during the day,[25] though some are active at night, notably geckos. As ectotherms, lizards have a limited ability to regulate their body temperature, and must seek out and bask in sunlight to gain enough heat to become fully active.[26]
+
+Territoriality
+
+Most social interactions among lizards are between breeding individuals.[25] Territoriality is common and is correlated with species that use sit-and-wait hunting strategies. Males establish and maintain territories that contain resources which attract females and which they defend from other males. Important resources include basking, feeding, and nesting sites as well as refuges from predators. The habitat of a species affects the structure of territories, for example, rock lizards have territories atop rocky outcrops.[27] Some species may aggregate in groups, enhancing vigilance and lessening the risk of predation for individuals, particularly for juveniles.[28] Agonistic behaviour typically occurs between sexually mature males over territory or mates and may involve displays, posturing, chasing, grappling and biting.[27]
+
+Communication
+
+Main article: Lizard communication
+Lizards signal both to attract mates and to intimidate rivals. Visual displays include body postures and inflation, push-ups, bright colours, mouth gapings and tail waggings. Male anoles and iguanas have dewlaps or skin flaps which come in various sizes, colours and patterns and the expansion of the dewlap as well as head-bobs and body movements add to the visual signals.[29][4] Some species have deep blue dewlaps and communicate with ultraviolet signals.[25] Blue-tongued skinks will flash their tongues as a threat display.[30] Chameleons are known to change their complex colour patterns when communicating, particularly during agonistic encounters. They tend to show brighter colours when displaying aggression[31] and darker colours when they submit or "give up".[32]
+
+Several gecko species are brightly coloured; some species tilt their bodies to display their coloration. In certain species, brightly coloured males turn dull when not in the presence of rivals or females. While it is usually males that display, in some species females also use such communication. In the bronze anole, head-bobs are a common form of communication among females, the speed and frequency varying with age and territorial status. Chemical cues or pheromones are also important in communication. Males typically direct signals at rivals, while females direct them at potential mates. Lizards may be able to recognise individuals of the same species by their scent.
