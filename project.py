@@ -92,8 +92,7 @@ def main():
 
     print('Le texte testé est', un_texte_inconnu)
     print('Il possède ', len(simplifie_textes(un_texte_inconnu[0])), 'lettres.', '\n')
-    print("Tableau de fréquences d'apparition des lettres dans le texte à tester (inconnu),
-           et les moyennes de fréquence par langue")
+    print("Tableau de fréquences d'apparition des lettres dans le texte à tester (inconnu),et les moyennes de fréquence par langue")
     print(tableau_moyennes_fr_an_inc, '\n')
 
     print('coefficient de correlation francais/inconnu:', correlation_fr_inc)
@@ -102,7 +101,7 @@ def main():
         #PHASE DE TEST
 
     if (correlation_fr_inc > correlation_an_inc) and que_tester == textes_test_francais:
-            print("Au vu des correlations, le texte semble être francais, et c'est vrai!")
+        print("Au vu des correlations, le texte semble être francais, et c'est vrai!")
     elif (correlation_fr_inc > correlation_an_inc) and que_tester == textes_test_anglais:
         print ("Au vu des correlations, le texte semble être francais, mais malheureusement il ne l'est pas.")
 
