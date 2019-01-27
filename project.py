@@ -95,20 +95,20 @@ def main():
     print("Tableau de fréquences d'apparition des lettres dans le texte à tester (inconnu),et les moyennes de fréquence par langue")
     print(tableau_moyennes_fr_an_inc, '\n')
 
-    print('coefficient de correlation francais/inconnu:', correlation_fr_inc)
-    print('coefficient de correlation anglais/inconnu:', correlation_an_inc, '\n')
+    print('coefficient de corrélation français/inconnu:', correlation_fr_inc)
+    print('coefficient de corrélation anglais/inconnu:', correlation_an_inc, '\n')
 
         #PHASE DE TEST
 
     if (correlation_fr_inc > correlation_an_inc) and que_tester == textes_test_francais:
-        print("Au vu des correlations, le texte semble être francais, et c'est vrai!")
+        print("Au vu des corrélations, le texte semble être francais, et c'est vrai!")
     elif (correlation_fr_inc > correlation_an_inc) and que_tester == textes_test_anglais:
-        print ("Au vu des correlations, le texte semble être francais, mais malheureusement il ne l'est pas.")
+        print ("Au vu des corrélations, le texte semble être francais, mais malheureusement il ne l'est pas.")
 
     if (correlation_an_inc > correlation_fr_inc) and que_tester == textes_test_anglais:
-        print("Au vu des correlations, le texte semble être anglais, et c'est vrai!")
+        print("Au vu des corrélations, le texte semble être anglais, et c'est vrai!")
     elif (correlation_an_inc > correlation_fr_inc) and que_tester == textes_test_francais:
-        print ("Au vu des correlations, le texte semble être anglais, mais malheureusement il ne l'est pas.")
+        print ("Au vu des corrélations, le texte semble être anglais, mais malheureusement il ne l'est pas.")
 
 
 if __name__ == '__main__':
